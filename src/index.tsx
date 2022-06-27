@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import DatePicker from './lib/DatePicker';
+import './style.css';
 
 
 const root = ReactDOM.createRoot(
@@ -9,6 +10,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <DatePicker label='date picker' name='date-picker' error={true} />
+    <div className="demo">
+      <DatePicker label='date picker' name='date-picker' />
+    </div>
   </React.StrictMode>
 )

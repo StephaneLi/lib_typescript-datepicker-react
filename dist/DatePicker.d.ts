@@ -1,6 +1,6 @@
-import { FunctionComponent } from "react";
+/// <reference types="react" />
 import "./style.scss";
-declare type DatePickerProps = {
+export declare type DatePickerProps = {
     label: string;
     name: string;
     errorMessage?: string;
@@ -26,5 +26,5 @@ export declare type DatePickerResult = {
     date: Date;
     value: string;
 };
-declare const DatePicker: FunctionComponent<DatePickerProps>;
+declare const DatePicker: React.FunctionComponent<DatePickerProps>;
 export default DatePicker;

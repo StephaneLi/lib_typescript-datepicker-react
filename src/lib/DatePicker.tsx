@@ -1,10 +1,10 @@
 import {faCalendar} from "@fortawesome/free-solid-svg-icons"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {CSSProperties, FunctionComponent, useEffect, useRef, useState} from "react"
-import DatePickerCalendar from "../DatePickerCalendar"
+import {CSSProperties, useEffect, useRef, useState} from "react"
+import DatePickerCalendar from "./DatePickerCalendar"
 import "./style.scss"
 
-type DatePickerProps = {
+export type DatePickerProps = {
   label: string
   name: string
   errorMessage?: string
@@ -32,7 +32,7 @@ export type DatePickerResult = {
   value: string
 }
 
-const DatePicker: FunctionComponent<DatePickerProps> = ({
+const DatePicker: React.FunctionComponent<DatePickerProps> = ({
   label,
   name,
   errorMessage = "Erreur message",

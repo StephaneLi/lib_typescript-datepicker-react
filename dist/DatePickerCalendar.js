@@ -1,3 +1,5 @@
+'use strict';
+
 
 
 function ___$insertStyle(css) {
@@ -13,7 +15,7 @@ function ___$insertStyle(css) {
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var index = require('./index-7f284dce.js');
+var DatePickerCalendar = require('./DatePickerCalendar-81393f38.js');
 require('react/jsx-runtime');
 require('react');
 require('@fortawesome/free-solid-svg-icons');
@@ -21,5 +23,4 @@ require('@fortawesome/react-fontawesome');
 
 
 
-exports["default"] = index.DatePickerCalendar;
-//# sourceMappingURL=index2.js.map
+exports["default"] = DatePickerCalendar.DatePickerCalendar;

@@ -1,7 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import DatePicker from '../DatePicker'
-
+import DatePicker from './DatePicker';
 
 describe('Component: DatePicker', () => {
   test('it should be render', () => {

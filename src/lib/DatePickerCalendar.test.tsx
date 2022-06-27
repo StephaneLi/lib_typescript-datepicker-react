@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import DatePickerCalendar from '../DatePickerCalendar';
+import DatePickerCalendar from './DatePickerCalendar';
 
 
 describe('Component: DatePickerCalendar', () => {

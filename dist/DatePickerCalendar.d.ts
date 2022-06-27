@@ -1,6 +1,6 @@
-import { FunctionComponent } from "react";
+import React from "react";
 import "./style.scss";
-declare type DatePickerCalendarProps = {
+export declare type DatePickerCalendarProps = {
     className?: string;
     color?: string;
     textColor?: string;
@@ -13,5 +13,5 @@ declare type DatePickerCalendarProps = {
     onSelect?: (date: Date, value: string) => void;
     onClose?: CallableFunction;
 };
-declare const DatePickerCalendar: FunctionComponent<DatePickerCalendarProps>;
+declare const DatePickerCalendar: React.FunctionComponent<DatePickerCalendarProps>;
 export default DatePickerCalendar;

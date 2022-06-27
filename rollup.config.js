@@ -5,21 +5,24 @@ import json from "@rollup/plugin-json";
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   input: [
-    'src/lib/DatePicker/index.tsx',
-    'src/lib/DatePickerCalendar/index.tsx'
+    './src/lib/DatePicker.tsx',
+    './src/lib/DatePickerCalendar.tsx',
   ],
   output: [
     {
       dir: 'dist',
       format: 'cjs',
       exports: 'named',
-      sourcemap: true,
-      strict: false
     }
   ],
   plugins: [
     sass({ insert: true }),
-    typescript({ objectHashIgnoreUnknownHack: true }),
+    typescript({
+      verbosity: 2,
+      clean: true,
+      useTsconfigDeclarationDir: true,
+      tsconfig: './tsconfig.json',
+    }),
     json()
   ],
   external: ['react', 'react-dom']

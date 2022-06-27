@@ -1,10 +1,10 @@
-import React, {FunctionComponent, useEffect, MouseEvent, useState, CSSProperties} from "react"
-import jsonTranslate from "./../data.translate.json"
+import React, {useEffect, MouseEvent, useState, CSSProperties} from "react"
+import jsonTranslate from "./data.translate.json"
 import {faHome, faAngleLeft, faAngleRight, faClose} from "@fortawesome/free-solid-svg-icons"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import "./style.scss"
 
-type DatePickerCalendarProps = {
+export type DatePickerCalendarProps = {
   className?: string
   color?: string
   textColor?: string
@@ -18,7 +18,7 @@ type DatePickerCalendarProps = {
   onClose?: CallableFunction
 }
 
-const DatePickerCalendar: FunctionComponent<DatePickerCalendarProps> = ({
+const DatePickerCalendar: React.FunctionComponent<DatePickerCalendarProps> = ({
   className,
   color = '#059ECE',
   textColor = '#70757A',

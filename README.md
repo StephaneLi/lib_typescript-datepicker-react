@@ -6,7 +6,8 @@
 A simple customizable react datepicker in typescript.  
 From project 14 OpenClassrooms, react app developer  
   
-[Projet 14 Openclassroms](https://github.com/StephaneLi/StephaneLieumont_14_03062022)
+[Projet 14 Openclassroms](https://github.com/StephaneLi/StephaneLieumont_14_03062022)  
+[Demo](https://stephaneli.github.io/lib_typescript-datepicker-react/)  
 
 ## Installation
 ```npm install @stephane1920/ts-datepicker-react```  
@@ -17,7 +18,7 @@ or
 ```jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import DatePicker from '@stephane1920/ts-datepicker-react';
+import { DatePicker } from '@stephane1920/ts-datepicker-react';
 
 const SomeComponent = () => {
   return (
@@ -32,7 +33,7 @@ const SomeComponent = () => {
 ```jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import DatePickerCalendar from '@stephane1920/ts-datepicker-react';
+import { DatePickerCalendar } from '@stephane1920/ts-datepicker-react';
 
 const SomeComponent = () => {
   return (

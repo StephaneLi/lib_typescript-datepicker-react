@@ -15,7 +15,7 @@ function ___$insertStyle(css) {
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var DatePickerCalendar = require('./DatePickerCalendar-81393f38.js');
+var DatePickerCalendar = require('./DatePickerCalendar-eefde8fc.js');
 var jsxRuntime = require('react/jsx-runtime');
 var freeSolidSvgIcons = require('@fortawesome/free-solid-svg-icons');
 var reactFontawesome = require('@fortawesome/react-fontawesome');
@@ -29,6 +29,7 @@ var DatePicker = function (_a) {
     var _p = react.useState(), showCalendar = _p[0], setShowCalendar = _p[1];
     var _q = react.useState(value), valueInput = _q[0], setValueInput = _q[1];
     var _r = react.useState(error), errorStatus = _r[0], setErrorStatus = _r[1];
+    // On blur fade out date calendar
     react.useEffect(function () {
         document.addEventListener("mousedown", function (e) {
             var _a;

@@ -15,12 +15,14 @@ function ___$insertStyle(css) {
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+var DatePicker = require('./DatePicker.js');
 var DatePickerCalendar = require('./DatePickerCalendar-eefde8fc.js');
 require('react/jsx-runtime');
-require('react');
 require('@fortawesome/free-solid-svg-icons');
 require('@fortawesome/react-fontawesome');
+require('react');
 
 
 
-exports["default"] = DatePickerCalendar.DatePickerCalendar;
+exports.DatePicker = DatePicker["default"];
+exports.DatePickerCalendar = DatePickerCalendar.DatePickerCalendar;

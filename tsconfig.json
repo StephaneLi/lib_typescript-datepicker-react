@@ -21,7 +21,10 @@
     "noUnusedParameters": true,
   },
   "include": [
-    "src/lib/custom.d.ts"
+    "src/lib"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "src/lib/*test.tsx"
+  ]
 }

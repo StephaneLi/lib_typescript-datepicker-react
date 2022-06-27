@@ -1,11 +1,11 @@
 .date-picker {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   max-width: 250px;
   min-height: 30px;
   color: var(--text-color);
@@ -14,7 +14,8 @@
     position: relative;
     width: 100%;
     max-width: 250px;
-    margin: 25px 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
     flex: 1 1 auto;    
     cursor: pointer;
   
@@ -51,7 +52,7 @@
         outline: none;
         border: none;
         font-size: 1rem;
-        line-height: 30px;
+        line-height: 1rem;
         transition: border .3s ease-in-out;
         z-index: 2;    
         border-radius: 5px;  
@@ -65,7 +66,8 @@
       top:0;
       left: 0;
       opacity: 0.5;
-      line-height: 30px;
+      font-size: 1rem;
+      line-height: 1.2rem;
       transform-origin: center left;
       transition: transform .15s ease-in-out;
   
@@ -75,9 +77,12 @@
     }
   
     &__error-message {
+      box-sizing: border-box;
       position: absolute;
+      margin: 0;
+      padding: 0;
       right:0;
-      top: 30px;
+      bottom: -12px;
       font-size: 0.6rem;
       color: var(--error-color)!important;
       animation: error .25s ease-in both;
@@ -85,9 +90,9 @@
   
     &--active {
       label {  
-        line-height: 1rem;
+        font-size: 0.95rem!important;
         opacity: 1;
-        transform: translate(-5px, -25px) scale(0.85);
+        transform: translate(-5px, -85%) scale(0.85);
       }
     }
 
@@ -112,8 +117,9 @@
   }
 
   .picker {
+    box-sizing: border-box;
     position: absolute!important;
-    top: 70px;
+    top: 50px;
     left: 0;
     width: 100%;
     z-index: 10;      
@@ -214,13 +220,14 @@
   }
 
   &__header {
+    box-sizing: border-box;
     position: relative;
     display: flex;
     justify-content: space-between;
     gap: 10px;
     padding: 10px 5px;
     background-color: gray;
-    height: 1rem;
+    height: 40px;
     color: white;
 
     p {
@@ -268,7 +275,7 @@
  
   &__table{
     text-align: center;
-    top: 2.8rem;
+    top: 50px;
     left: 0;
     height: 200px;
     width: 96%;

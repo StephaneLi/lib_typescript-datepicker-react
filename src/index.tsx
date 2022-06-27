@@ -9,6 +9,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <DatePicker label='date picker' name='date-picker' />
+    <DatePicker label='date picker' name='date-picker' error={true} />
   </React.StrictMode>
 )

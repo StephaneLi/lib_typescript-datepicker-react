@@ -63,6 +63,7 @@ const DatePicker: React.FunctionComponent<DatePickerProps> = ({
   const [valueInput, setValueInput] = useState<string>(value)
   const [errorStatus, setErrorStatus] = useState<boolean>(error)
 
+  // On blur fade out date calendar
   useEffect(() => {
     document.addEventListener("mousedown", (e: any) => {
       e.stopPropagation()

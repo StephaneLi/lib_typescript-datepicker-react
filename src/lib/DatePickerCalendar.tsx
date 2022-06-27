@@ -172,11 +172,13 @@ const DatePickerCalendar: React.FunctionComponent<DatePickerCalendarProps> = ({
 
   const previousMonth = (e : MouseEvent<HTMLElement>) => {
     e.preventDefault()
+    showDaysTable()
     setSelectMonth(selectMonth - 1)
   }
 
   const nextMonth = (e : MouseEvent<HTMLElement>) => {
     e.preventDefault()
+    showDaysTable()
     setSelectMonth(selectMonth + 1)
   }
 

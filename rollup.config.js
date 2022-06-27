@@ -5,6 +5,7 @@ import json from "@rollup/plugin-json";
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   input: [
+    './src/lib/index.ts',
     './src/lib/DatePicker.tsx',
     './src/lib/DatePickerCalendar.tsx',
   ],

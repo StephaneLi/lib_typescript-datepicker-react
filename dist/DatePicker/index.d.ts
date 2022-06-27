@@ -19,6 +19,7 @@ declare type DatePickerProps = {
     errorColor?: string;
     borderColor?: string;
     borderRadius?: string;
+    className?: string;
     onSelect?: CallableFunction;
 };
 export declare type DatePickerResult = {

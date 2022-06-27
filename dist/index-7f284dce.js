@@ -2111,7 +2111,7 @@ var DatePickerCalendar = function (_a) {
             var daySelected = currentDateTable.getTime() === value.getTime();
             var currentDateSelected = currentDateTable.getTime() === currentDate.getTime();
             if (dayNumber <= nDaysInMonth && dayNumber >= 1) {
-                table.push(jsxRuntime.jsx("div", exports.__assign({ onClick: handleClickDay, className: "day".concat(daySelected && !currentDateSelected
+                table.push(jsxRuntime.jsx("div", exports.__assign({ "data-testid": "day", onClick: handleClickDay, className: "day".concat(daySelected && !currentDateSelected
                         ? " day-selected"
                         : "").concat(currentDateSelected
                         ? " day-current"
@@ -2131,13 +2131,13 @@ var DatePickerCalendar = function (_a) {
     };
     var generateMonthsTable = function () {
         var table = [];
-        translateMonth.map(function (month, index) { return table.push(jsxRuntime.jsx("div", exports.__assign({ className: "month", onClick: handleClickMonth, "data-id": index }, { children: month }), month)); });
+        translateMonth.map(function (month, index) { return table.push(jsxRuntime.jsx("div", exports.__assign({ "data-testid": "month", className: "month", onClick: handleClickMonth, "data-id": index }, { children: month }), month)); });
         return table;
     };
     var generateYearsTable = function () {
         var table = [];
         for (var index = intervalYearsSelection[0]; index <= intervalYearsSelection[1]; index++) {
-            table.push(jsxRuntime.jsx("div", exports.__assign({ className: "year", onClick: handleClickYear }, { children: index }), index));
+            table.push(jsxRuntime.jsx("div", exports.__assign({ "data-testid": "year", className: "year", onClick: handleClickYear }, { children: index }), index));
         }
         return table;
     };
@@ -2197,11 +2197,11 @@ var DatePickerCalendar = function (_a) {
         setShowMonths(false);
         setShowYears(true);
     };
-    return (jsxRuntime.jsxs("div", exports.__assign({ className: "".concat(className ? className + " " : "", "date-picker-calendar").concat(elevation ? " date-picker-calendar__shadow" : ""), style: {
+    return (jsxRuntime.jsxs("div", exports.__assign({ "data-testid": "datepicker-calendar", className: "".concat(className ? className + " " : "", "date-picker-calendar").concat(elevation ? " date-picker-calendar__shadow" : ""), style: {
             '--primary-color': color,
             '--text-color': textColor
-        } }, { children: [jsxRuntime.jsxs("div", exports.__assign({ className: "date-picker-calendar__header", style: { backgroundColor: color } }, { children: [jsxRuntime.jsx("button", exports.__assign({ onClick: reset }, { children: jsxRuntime.jsx(reactFontawesome.FontAwesomeIcon, { icon: freeSolidSvgIcons.faHome }) })), jsxRuntime.jsxs("div", exports.__assign({ className: "controls" }, { children: [jsxRuntime.jsx("button", exports.__assign({ onClick: previousMonth }, { children: jsxRuntime.jsx(reactFontawesome.FontAwesomeIcon, { icon: freeSolidSvgIcons.faAngleLeft }) })), jsxRuntime.jsxs("p", { children: [jsxRuntime.jsx("span", exports.__assign({ className: "date-picker-calendar__header__month", onClick: showMonthsTable }, { children: translateMonth[selectMonth] })), jsxRuntime.jsx("span", exports.__assign({ className: "date-picker-calendar__header__year", onClick: showYearsTable }, { children: selectYear }))] }), jsxRuntime.jsx("button", exports.__assign({ onClick: nextMonth }, { children: jsxRuntime.jsx(reactFontawesome.FontAwesomeIcon, { icon: freeSolidSvgIcons.faAngleRight }) }))] })), jsxRuntime.jsx("button", exports.__assign({ onClick: close }, { children: jsxRuntime.jsx(reactFontawesome.FontAwesomeIcon, { icon: freeSolidSvgIcons.faClose }) }))] })), jsxRuntime.jsxs("div", exports.__assign({ className: "date-picker-calendar__table" }, { children: [jsxRuntime.jsx("div", exports.__assign({ className: "date-picker-calendar__table__days ".concat(showDays === true ? "show-table" : showDays === false ? "hide-table" : "") }, { children: generateDaysTable() })), jsxRuntime.jsx("div", exports.__assign({ className: "date-picker-calendar__table__months ".concat(showMonths ? "show-table" : "hide-table") }, { children: generateMonthsTable() })), jsxRuntime.jsx("div", exports.__assign({ className: "date-picker-calendar__table__years ".concat(showYears ? "show-table" : "hide-table") }, { children: generateYearsTable() }))] }))] })));
+        } }, { children: [jsxRuntime.jsxs("div", exports.__assign({ className: "date-picker-calendar__header", style: { backgroundColor: color } }, { children: [jsxRuntime.jsx("button", exports.__assign({ "data-testid": "home-controller", onClick: reset }, { children: jsxRuntime.jsx(reactFontawesome.FontAwesomeIcon, { icon: freeSolidSvgIcons.faHome }) })), jsxRuntime.jsxs("div", exports.__assign({ className: "controls" }, { children: [jsxRuntime.jsx("button", exports.__assign({ "data-testid": "previous-controller", onClick: previousMonth }, { children: jsxRuntime.jsx(reactFontawesome.FontAwesomeIcon, { icon: freeSolidSvgIcons.faAngleLeft }) })), jsxRuntime.jsxs("p", { children: [jsxRuntime.jsx("span", exports.__assign({ className: "date-picker-calendar__header__month", onClick: showMonthsTable }, { children: translateMonth[selectMonth] })), jsxRuntime.jsx("span", exports.__assign({ className: "date-picker-calendar__header__year", onClick: showYearsTable }, { children: selectYear }))] }), jsxRuntime.jsx("button", exports.__assign({ "data-testid": "next-controller", onClick: nextMonth }, { children: jsxRuntime.jsx(reactFontawesome.FontAwesomeIcon, { icon: freeSolidSvgIcons.faAngleRight }) }))] })), jsxRuntime.jsx("button", exports.__assign({ "data-testid": "close-controller", onClick: close }, { children: jsxRuntime.jsx(reactFontawesome.FontAwesomeIcon, { icon: freeSolidSvgIcons.faClose }) }))] })), jsxRuntime.jsxs("div", exports.__assign({ "data-testid": "datepicker-calendar-table", className: "date-picker-calendar__table" }, { children: [jsxRuntime.jsx("div", exports.__assign({ className: "date-picker-calendar__table__days ".concat(showDays === true ? "show-table" : showDays === false ? "hide-table" : "") }, { children: generateDaysTable() })), jsxRuntime.jsx("div", exports.__assign({ className: "date-picker-calendar__table__months ".concat(showMonths ? "show-table" : "hide-table") }, { children: generateMonthsTable() })), jsxRuntime.jsx("div", exports.__assign({ className: "date-picker-calendar__table__years ".concat(showYears ? "show-table" : "hide-table") }, { children: generateYearsTable() }))] }))] })));
 };
 
 exports.DatePickerCalendar = DatePickerCalendar;
-//# sourceMappingURL=index-cd1e5c2e.js.map
+//# sourceMappingURL=index-7f284dce.js.map

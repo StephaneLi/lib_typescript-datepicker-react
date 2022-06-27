@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/lib_typescript-datepicker-react/static/css/main.c5abbd5b.css",
-    "main.js": "/lib_typescript-datepicker-react/static/js/main.b78c619b.js",
+    "main.css": "/lib_typescript-datepicker-react/static/css/main.e444a012.css",
+    "main.js": "/lib_typescript-datepicker-react/static/js/main.f75df27f.js",
     "index.html": "/lib_typescript-datepicker-react/index.html",
-    "main.c5abbd5b.css.map": "/lib_typescript-datepicker-react/static/css/main.c5abbd5b.css.map",
-    "main.b78c619b.js.map": "/lib_typescript-datepicker-react/static/js/main.b78c619b.js.map"
+    "main.e444a012.css.map": "/lib_typescript-datepicker-react/static/css/main.e444a012.css.map",
+    "main.f75df27f.js.map": "/lib_typescript-datepicker-react/static/js/main.f75df27f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5abbd5b.css",
-    "static/js/main.b78c619b.js"
+    "static/css/main.e444a012.css",
+    "static/js/main.f75df27f.js"
   ]
 }

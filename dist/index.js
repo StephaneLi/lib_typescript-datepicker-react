@@ -9,6 +9,7 @@ require('@fortawesome/free-solid-svg-icons');
 require('@fortawesome/react-fontawesome');
 require('react');
 
+require('./style.css')
 
 
 exports.DatePicker = DatePicker["default"];

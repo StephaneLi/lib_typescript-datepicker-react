@@ -8,6 +8,8 @@ require('react');
 require('@fortawesome/free-solid-svg-icons');
 require('@fortawesome/react-fontawesome');
 
+require('./style.css')
+
 
 
 exports["default"] = DatePickerCalendar.DatePickerCalendar;

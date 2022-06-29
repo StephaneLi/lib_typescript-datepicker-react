@@ -4,6 +4,7 @@ var jsxRuntime = require('react/jsx-runtime');
 var react = require('react');
 var freeSolidSvgIcons = require('@fortawesome/free-solid-svg-icons');
 var reactFontawesome = require('@fortawesome/react-fontawesome');
+require('./style.css');
 
 /******************************************************************************
 Copyright (c) Microsoft Corporation.

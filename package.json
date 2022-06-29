@@ -23,7 +23,7 @@
     "type": "git",
     "url": "git+https://github.com/StephaneLi/lib_typescript-datepicker-react.git"
   },
-  "version": "1.0.6",
+  "version": "1.0.8",
   "scripts": {
     "start": "react-scripts start",
     "clean": "rm -rf dist",

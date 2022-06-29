@@ -2,13 +2,13 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+require('./style.css');
+
 var DatePickerCalendar = require('./DatePickerCalendar-92767d8c.js');
 var jsxRuntime = require('react/jsx-runtime');
 var freeSolidSvgIcons = require('@fortawesome/free-solid-svg-icons');
 var reactFontawesome = require('@fortawesome/react-fontawesome');
 var react = require('react');
-
-require('./style.css')
 
 var DatePicker = function (_a) {
     var label = _a.label, name = _a.name, _b = _a.errorMessage, errorMessage = _b === void 0 ? "Erreur message" : _b, _c = _a.error, error = _c === void 0 ? false : _c, _d = _a.value, value = _d === void 0 ? "" : _d, _e = _a.lang, lang = _e === void 0 ? "fr-FR" : _e, year = _a.year, month = _a.month, day = _a.day, intervalYearsSelection = _a.intervalYearsSelection, _f = _a.elevationPicker, elevationPicker = _f === void 0 ? false : _f, _g = _a.headerPickerColor, headerPickerColor = _g === void 0 ? '#059ECE' : _g, _h = _a.borderColor, borderColor = _h === void 0 ? '#DADCE0' : _h, _j = _a.textColor, textColor = _j === void 0 ? '#70757A' : _j, _k = _a.focusColor, focusColor = _k === void 0 ? '#059ECE' : _k, _l = _a.errorColor, errorColor = _l === void 0 ? '#EF6C6C' : _l, _m = _a.borderRadius, borderRadius = _m === void 0 ? '5px' : _m, className = _a.className, _o = _a.zIndex, zIndex = _o === void 0 ? 999 : _o, onSelect = _a.onSelect;

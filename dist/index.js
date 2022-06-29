@@ -1,6 +1,7 @@
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
+require('./style.css');
 
 var DatePicker = require('./DatePicker.js');
 var DatePickerCalendar = require('./DatePickerCalendar-92767d8c.js');
@@ -9,7 +10,6 @@ require('@fortawesome/free-solid-svg-icons');
 require('@fortawesome/react-fontawesome');
 require('react');
 
-require('./style.css')
 
 
 exports.DatePicker = DatePicker["default"];

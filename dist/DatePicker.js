@@ -1,21 +1,8 @@
 'use strict';
 
-
-
-function ___$insertStyle(css) {
-    if (!css || typeof window === 'undefined') {
-        return;
-    }
-    const style = document.createElement('style');
-    style.setAttribute('type', 'text/css');
-    style.innerHTML = css;
-    document.head.appendChild(style);
-    return css;
-}
-
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var DatePickerCalendar = require('./DatePickerCalendar-eefde8fc.js');
+var DatePickerCalendar = require('./DatePickerCalendar-92767d8c.js');
 var jsxRuntime = require('react/jsx-runtime');
 var freeSolidSvgIcons = require('@fortawesome/free-solid-svg-icons');
 var reactFontawesome = require('@fortawesome/react-fontawesome');
@@ -58,7 +45,7 @@ var DatePicker = function (_a) {
                     '--error-color': errorColor,
                     '--border-color': borderColor,
                     '--border-radius': borderRadius,
-                } }, { children: [jsxRuntime.jsx("label", DatePickerCalendar.__assign({ htmlFor: name }, { children: label })), jsxRuntime.jsxs("div", DatePickerCalendar.__assign({ className: "input-date__content" }, { children: [jsxRuntime.jsx("input", { "data-testid": "datepicker-input", ref: inputDate, name: name, value: valueInput, readOnly: true }), jsxRuntime.jsx("i", { children: jsxRuntime.jsx(reactFontawesome.FontAwesomeIcon, { icon: freeSolidSvgIcons.faCalendar }) })] })), errorStatus && (jsxRuntime.jsx("p", DatePickerCalendar.__assign({ className: "input-date__error-message" }, { children: errorMessage })))] })), jsxRuntime.jsx("div", DatePickerCalendar.__assign({ ref: wrapperDate, className: "picker".concat(showCalendar === true ? ' show' : showCalendar === false ? ' hide' : ''), style: {
+                } }, { children: [jsxRuntime.jsx("label", DatePickerCalendar.__assign({ htmlFor: name }, { children: label })), jsxRuntime.jsxs("div", DatePickerCalendar.__assign({ className: "input-date__content" }, { children: [jsxRuntime.jsx("input", { id: name, "data-testid": "datepicker-input", ref: inputDate, name: name, value: valueInput, readOnly: true }), jsxRuntime.jsx("i", { children: jsxRuntime.jsx(reactFontawesome.FontAwesomeIcon, { icon: freeSolidSvgIcons.faCalendar }) })] })), errorStatus && (jsxRuntime.jsx("p", DatePickerCalendar.__assign({ className: "input-date__error-message" }, { children: errorMessage })))] })), jsxRuntime.jsx("div", DatePickerCalendar.__assign({ ref: wrapperDate, className: "picker".concat(showCalendar === true ? ' show' : showCalendar === false ? ' hide' : ''), style: {
                     zIndex: zIndex
                 } }, { children: jsxRuntime.jsx(DatePickerCalendar.DatePickerCalendar, { elevation: elevationPicker, lang: lang, year: year, month: month, day: day, intervalYearsSelection: intervalYearsSelection, color: headerPickerColor, onSelect: function (date, value) {
                         var result = {

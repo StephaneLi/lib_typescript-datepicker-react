@@ -17,7 +17,11 @@ export default {
     }
   ],
   plugins: [
-    sass({ insert: true }),
+    sass({
+      output: "./dist/style.css",
+      failOnError: true,
+      runtime: require("sass"),
+    }),
     typescript({
       verbosity: 2,
       clean: true,

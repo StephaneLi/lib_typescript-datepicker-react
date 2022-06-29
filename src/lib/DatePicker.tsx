@@ -105,7 +105,7 @@ const DatePicker: React.FunctionComponent<DatePickerProps> = ({
       >
         <label htmlFor={name}>{label}</label>
         <div className="input-date__content">
-          <input data-testid="datepicker-input" ref={inputDate} name={name} value={valueInput} readOnly={true} />
+          <input id={name} data-testid="datepicker-input" ref={inputDate} name={name} value={valueInput} readOnly={true} />
           <i><FontAwesomeIcon icon={faCalendar}/></i>
         </div>
         { errorStatus && (<p className="input-date__error-message">{errorMessage}</p>) }

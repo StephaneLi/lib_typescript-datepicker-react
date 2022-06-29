@@ -23,13 +23,13 @@
     "type": "git",
     "url": "git+https://github.com/StephaneLi/lib_typescript-datepicker-react.git"
   },
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "start": "react-scripts start",
     "clean": "rm -rf dist",
     "build": "npm run clean && rollup -c",
     "test": "react-scripts test",
-    "test-coverage": "react-scripts test a --coverage --collectCoverageFrom='./src/lib/**/*.tsx'",
+    "test-coverage": "react-scripts test a --coverage --collectCoverageFrom='./src/lib/*.tsx'",
     "eject": "react-scripts eject",
     "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build"
